@@ -1,0 +1,30 @@
+### Create book
+POST http://localhost:8080/books
+Content-Type: application/json
+
+{
+  "title": "Clean Code",
+  "author": "Robert C. Martin",
+  "genre": "Software Development"
+}
+
+### Get books
+GET http://localhost:8080/books
+Accept: application/json
+
+### Get book by id
+GET http://localhost:8080/books/1
+Accept: application/json
+
+### Update book by id
+PUT http://localhost:8080/books/1
+Content-Type: application/json
+
+{
+  "title": "Clean Arch",
+  "author": "Robert C. Martin",
+  "genre": "Software Development"
+}
+
+### Delete book by id
+DELETE http://localhost:8080/books/1
